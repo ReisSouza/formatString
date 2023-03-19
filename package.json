@@ -1,6 +1,6 @@
 {
   "name": "format-string-js",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Create or remove mask for type input CPF | CNPJ | CFPORCNPJ | CURRENCY | PHONE | POSTCODE",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -34,9 +34,6 @@
     "ts-node-dev": "^2.0.0",
     "typescript": ">=4.4"
   },
-  "bin": {
-    "react-mask-input": "bin/index.js"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ReisSouza/formatString.git"
@@ -45,8 +42,5 @@
   "bugs": {
     "url": "https://github.com/ReisSouza/formatString.git/issues"
   },
-  "homepage": "https://github.com/ReisSouza/formatString.git#readme",
-  "dependencies": {
-    "react-input-mask-br": "^1.0.0"
-  }
+  "homepage": "https://github.com/ReisSouza/formatString.git#readme"
 }
