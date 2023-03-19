@@ -11,6 +11,7 @@ export type TypeFormatStingProps =
   | 'rg'
   | 'credCard'
   | 'obscureEmail'
+  | 'number'
 
 export type OptionsCurrency = Intl.NumberFormatOptions & {
   locale?: 'en-US' | 'pt-BR' | 'fr-FR' | 'it-IT' | 'pt-PT' | 'zh-CN' | 'ja-JP'

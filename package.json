@@ -1,5 +1,5 @@
 {
-  "name": "format-string",
+  "name": "format-string-js",
   "version": "1.0.0",
   "description": "Create or remove mask for type input CPF | CNPJ | CFPORCNPJ | CURRENCY | PHONE | POSTCODE",
   "main": "./dist/index.js",

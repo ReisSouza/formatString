@@ -6,10 +6,11 @@ import {
   currencyMask,
   phoneMask,
   postalCodeMask,
-  obscureEmail,
+  numberMask,
+  obscureEmailMask,
   rgMask,
-} from '../format';
-import { FormatStringProps, TypeFormatStingProps } from '../types';
+} from '../format'
+import { FormatStringProps, TypeFormatStingProps } from '../types'
 
 const setMask = ({ value, type, prefix }: FormatStringProps): string => {
   const asMaskSelect: Record<TypeFormatStingProps, string> = {
@@ -21,11 +22,14 @@ const setMask = ({ value, type, prefix }: FormatStringProps): string => {
     currency: currencyMask(value),
     rg: rgMask(value),
     credCard: credCardMask(value),
-    obscureEmail: obscureEmail(value),
-  };
+    obscureEmail: obscureEmailMask(value),
+    number: numberMask(value),
+  }
 
-  const newValue = prefix ? `${prefix} ${asMaskSelect[type]}` : asMaskSelect[type];
-  return newValue;
-};
+  const newValue = prefix
+    ? `${prefix} ${asMaskSelect[type]}`
+    : asMaskSelect[type]
+  return newValue
+}
 
-export default setMask;
+export default setMask
