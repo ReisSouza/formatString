@@ -39,13 +39,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ReisSouza/mask-Input-react-ptbr.git"
+    "url": "git+https://github.com/ReisSouza/formatString.git"
   },
   "keywords": [],
   "bugs": {
-    "url": "https://github.com/ReisSouza/mask-Input-react-ptbr/issues"
+    "url": "https://github.com/ReisSouza/formatString.git/issues"
   },
-  "homepage": "https://github.com/ReisSouza/mask-Input-react-ptbr#readme",
+  "homepage": "https://github.com/ReisSouza/formatString.git#readme",
   "dependencies": {
     "react-input-mask-br": "^1.0.0"
   }
