@@ -27,7 +27,9 @@ functionality that allows adding or removing mask to string, working with any re
 | CURRENCY
 | POSTALCODE
 | CREDCARD
-| OBSCUREEMAIL</p>
+| OBSCUREEMAIL
+| NUMBER
+</p>
 
 
 
@@ -42,48 +44,52 @@ functionality that allows adding or removing mask to string, working with any re
 
 
 # Installation
-```npm i react-input-mask-br```  Or  ```yarn add react-input-mask-br```
+```npm i format-string-js```  Or  ```yarn add format-string-js```
 
 # Usage
 
 ```
 import {setMask } from "react-input-mask-br";
 
-const maskCPF = setMask({ type: 'cpf', value: '00000000000' });
-const maskCNPJ = setMask({ type: 'cnpj', value: '00000000000000' });
-const maskRG = setMask({ type: 'rg', value: '000000000' });
-const maskPostCode = setMask({ type: 'postalCode', value: '000000000' });
-const maskPhone = setMask({ type: 'phone', value: '000000000' });
-const maskCPFORCNPJ1 = setMask({ type: 'currency', value: '00000000000' });
-const maskCPFORCNPJ2 = setMask({ type: 'cpfOurCnpj', value: '00000000000000' });
-const maskCredCard = setMask({ type: 'credCard', value: '0000000000000000' });
-const maskCurrency = setMask({ type: 'cpfOurCnpj', value: '100000000' });
-const maskCurrency = setMask({ type: 'obscureEmail', value: 'useradmin@outlook.com' });
+const cpf = cpfMask('00000000000')
+const cnpj = cnpjMask('00000000000000')
+const cpfOurCnpj1 = cpfOurCnpjMask('00000000000')
+const cpfOurCnpj2 = cpfOurCnpjMask('00000000000000')
+const currency = currencyMask('00000000000')
+const phone = phoneMask('00000000000')
+const postalCode = postalCodeMask('00000000000')
+const rg = rgMask('000000000')
+const credCard = credCardMask('0000000000000000')
+const number = numberMask('0dasdas0000dasdasd0dasdasd0000dasdas0dasd0')
+const obscureEmail = obscureEmailMask('user123@gmail.com')
 
 console.log({
-  maskCPF,
-  maskCNPJ,
-  maskRG,
-  maskPostCode,
-  maskPhone,
-  maskCurrency,
-  maskCredCard,
-  maskCPFORCNPJ1,
-  maskCPFORCNPJ2,
-  maskCurrency
-});
+  cpf,
+  cnpj,
+  cpfOurCnpj1,
+  cpfOurCnpj2,
+  currency,
+  phone,
+  postalCode,
+  rg,
+  credCard,
+  number,
+  obscureEmail,
+})
+
 
 {
-  maskCPF: '000.000.000-00',
-  maskCNPJ: '00.000.000.0000-00',
-  maskRG: '00.000.000-0',
-  maskPostCode: '00000-000',
-  maskPhone: '(00) 0 0000-00',
-  maskCurrency: '100.000.000',
-  maskCredCard: '0000-0000-0000-0000',
-  maskCPFORCNPJ1: 'R$ 000.000.000,00',
-  maskCPFORCNPJ2: '00.000.000.0000-00'
-  maskCurrency: 'u********@outlook.com'
+  cpf: '000.000.000-00',
+  cnpj: '00.000.000.0000-00',
+  cpfOurCnpj1: '000.000.000-00',
+  cpfOurCnpj2: '00.000.000.0000-00',
+  currency: '0,00',
+  phone: '(00) 0 0000-0000',
+  postalCode: '00000-000',
+  rg: '00.000.000-0',
+  credCard: '0000-0000-0000-0000',
+  number: '000000000000',
+  obscureEmail: 'u******@gmail.com'
 }
 
 const removeCPF = removeMask(maskCPF);
