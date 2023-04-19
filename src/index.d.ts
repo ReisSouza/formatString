@@ -9,4 +9,6 @@ export declare const postalCodeFormat: (value: Value) => Response;
 export declare const currencyFormat: (value: Value) => Response;
 export declare const rgFormat: (value: Value) => Response;
 export declare const numberFormat: (value: Value) => Response;
+export declare  const cardExpirationDate: (value:Value) => Response;
+
 export declare const setFormat: ({ value, type, prefix }: FormatStringProps) => Response;

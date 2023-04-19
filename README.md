@@ -20,26 +20,30 @@
 functionality that allows adding or removing mask to string, working with any react library, or html, react, and javascript</p>
 <p align="center"> Available masks:</p>
 <p align="center">CPF
-| CNPJ
-| CPFOURCNPJ
-| RG
-| PHONE
-| CURRENCY
-| POSTALCODE
-| CREDCARD
-| OBSCUREEMAIL
-| NUMBER
+  | cnpj
+  | cpf
+  | phone
+  | postalCode
+  | cpfOurCnpj
+  | currency
+  | rg
+  | credCard
+  | obscureEmail
+  | number
+  | cardExpirationDate
 </p>
 
 
 
 # Table of Contents
-* [Installation](#installation)
-* [Usage](#usage)
-* [Type](#type)
-* [Properties setMask](#properties-setMask)
-* [Usage sinle](#usage-single)
-* [Exemples](#exemples)
+- [Table of Contents](#table-of-contents)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Properties setMask](#properties-setmask)
+- [Type](#type)
+- [Usage single](#usage-single)
+  - [✍️ Authors ](#️-authors-)
+- [Thanks](#thanks)
 
 
 
@@ -49,7 +53,7 @@ functionality that allows adding or removing mask to string, working with any re
 # Usage
 
 ```
-import {setMask } from "react-input-mask-br";
+import {setMask } from "format-string-js";
 
 const cpf = cpfMask('00000000000')
 const cnpj = cnpjMask('00000000000000')

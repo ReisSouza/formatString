@@ -8,6 +8,7 @@ import {
   postalCodeMask,
   numberMask,
   obscureEmailMask,
+  cardExpirationDateMask,
   rgMask,
 } from '../format'
 import { FormatStringProps, TypeFormatStingProps } from '../types'
@@ -24,6 +25,7 @@ const setMask = ({ value, type, prefix }: FormatStringProps): string => {
     credCard: credCardMask(value),
     obscureEmail: obscureEmailMask(value),
     number: numberMask(value),
+    cardExpirationDate: cardExpirationDateMask(value)
   }
 
   const newValue = prefix

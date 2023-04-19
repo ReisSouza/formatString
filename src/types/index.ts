@@ -12,6 +12,7 @@ export type TypeFormatStingProps =
   | 'credCard'
   | 'obscureEmail'
   | 'number'
+  | 'cardExpirationDate'
 
 export type OptionsCurrency = Intl.NumberFormatOptions & {
   locale?: 'en-US' | 'pt-BR' | 'fr-FR' | 'it-IT' | 'pt-PT' | 'zh-CN' | 'ja-JP'

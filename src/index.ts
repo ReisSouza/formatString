@@ -9,6 +9,7 @@ import {
   credCardMask,
   obscureEmailMask,
   numberMask,
+  cardExpirationDateMask
 } from './format'
 import setMask from './set'
 import removeMask from './remove'
@@ -19,6 +20,7 @@ export {
   numberMask,
   setMask,
   cnpjMask,
+  cardExpirationDateMask,
   cpfMask,
   cpfOurCnpjMask,
   currencyMask,
